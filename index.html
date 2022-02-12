@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .field{
+            border: 2px solid crimson;
+        }
+        .ball{
+            width: 50px;
+            height: 50px;
+            background-color: crimson;
+            border-radius: 25px;
+            position: relative;
+            left:  535px;
+        }
+        .field:hover .ball{
+            transform: translate(1500px, -300px);
+            transition: transform 1s ease-out 0.2s;
+        }
+        .bat{
+            transition: transform 0.2s ease-in;
+        }
+        .field:hover .bat{
+            transform: rotate(-60deg);
+            transform-origin: top right;
+        }
+        .text{
+            text-align: center;
+            color: crimson;
+            margin-top: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="field">
+        <img class="bat" src="./images/bat.png" alt="">
+        <div class="ball">
+
+        </div>
+        
+    </div>
+    <div class="text">
+        <h1>Put the mouse cursor into the red-box to hit the ball...!</h1>
+    </div>
+</body>
+</html>
